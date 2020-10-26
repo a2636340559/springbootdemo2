@@ -28,7 +28,7 @@ public class DemoController {
             return courseServiceImpl.findAllThroughMybatis();
         if(way.equals("jpa"))
             return courseServiceImpl.findAllThroughJpa();
-        return new CommonResult("路径参数错误,\n/course/list/{way},\nway[mybatis|jpa].");
+        return new CommonResult("路径参数错误,/course/list/{way},way[mybatis|jpa].");
     }
 
 
@@ -40,6 +40,6 @@ public class DemoController {
             return courseServiceImpl.findOneThroughMybatis();
         if(way.equals("jpa"))
             return courseServiceImpl.findOneThroughJpa();
-        return new CommonResult("路径参数错误,\n/course/getone/{way},\nway[mybatis|jpa].");
+        return new CommonResult("路径参数错误,/course/getone/{way},way[mybatis|jpa].");
     }
 }
