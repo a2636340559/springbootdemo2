@@ -30,7 +30,6 @@ public class CourseServiceImpl implements CourseService {
                 commonResult.setStatus("success");
                 commonResult.setMessage("find one through mybatis.");
             } else {
-                commonResult.setStatus("failed");
                 commonResult.setMessage("result is null");
             }
         }
@@ -52,7 +51,6 @@ public class CourseServiceImpl implements CourseService {
                 commonResult.setStatus("success");
                 commonResult.setMessage("find one through jpa.");
             } else {
-                commonResult.setStatus("failed");
                 commonResult.setMessage("result is null");
             }
         }
@@ -74,7 +72,6 @@ public class CourseServiceImpl implements CourseService {
                 commonResult.setStatus("success");
                 commonResult.setMessage("get one data by id through mybatis.");
             } else {
-                commonResult.setStatus("failed");
                 commonResult.setMessage("the data that id = "+id+" doesn't exist.");
             }
         }
@@ -96,7 +93,6 @@ public class CourseServiceImpl implements CourseService {
                 commonResult.setStatus("success");
                 commonResult.setMessage("get one data by id through jpa.");
             } else {
-                commonResult.setStatus("failed");
                 commonResult.setMessage("the data that id = "+id+" doesn't exist.");
             }
         }
@@ -118,7 +114,6 @@ public class CourseServiceImpl implements CourseService {
                 commonResult.setStatus("success");
                 commonResult.setMessage("find all through mybatis.");
             } else {
-                commonResult.setStatus("failed");
                 commonResult.setMessage("there is no data.");
             }
         }
@@ -140,7 +135,6 @@ public class CourseServiceImpl implements CourseService {
                 commonResult.setStatus("success");
                 commonResult.setMessage("find all through jpa.");
             } else {
-                commonResult.setStatus("failed");
                 commonResult.setMessage("there is no data.");
             }
         }

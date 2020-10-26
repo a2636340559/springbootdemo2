@@ -50,7 +50,7 @@ public class CommonResult implements Serializable {
     {
         return "{\n"+
                     "status:"+status+",\n"+
-                    "result:"+result.toString()+",\n"+
+                    "result:"+((result==null)?null:result.toString())+",\n"+
                     "message:"+message+"\n}\n";
     }
 }
